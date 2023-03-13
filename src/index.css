@@ -1,3 +1,20 @@
+:root {
+  --sidebar-color: #7f1d1d;
+  --bodyColor: #ffe1b6;
+  --secondary-color: #f2e4d6;
+  --body-color: #191919;
+  --gray-color: #d1d3d4;
+  --vibrant-green: #00fff1;
+  --corp-gradient:
+  linear-gradient(
+      45deg,
+      var(--sidebar-color),
+      var(--bodyColor),
+      var(--corp-color)
+    )
+    right;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +28,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  }
+
+  .sidebarbg{
+    background: var(--sidebar-color);
+    height: 100vh;
+  }
+
+  .whitecolor{
+    color:#fff;
+  }
+
+  .siderbar-ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .siderbar-ul li.active {
+    background: #ffffff26;
+}
+
+.siderbar-ul li {
+  margin-top: 5px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.siderbar-ul li:hover {
+  background: #ffffff26;
+}
+
+  .siderbar-ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu[data-bs-popper]{
+  right: 0!important;
+}
+
+.dropdown-menu[data-bs-popper]{
+  right: 0!important;
+}
+.headertop {
+  height: 60px;
+  background: #fff5d7;
+  border-bottom: 1px solid #7f1d1d;
+}
+
+  @media (min-width: 1025px) {
+  .h-custom-2 {
+  height: 100%;
+  }
+  }
+
+  
